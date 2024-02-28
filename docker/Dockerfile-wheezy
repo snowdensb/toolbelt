@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM debian:bookworm
 
 RUN echo "deb http://ftp.debian.org/debian wheezy-backports main" >> /etc/apt/sources.list.d/backports.list
 RUN apt-get update && apt-get install -y debhelper build-essential git
